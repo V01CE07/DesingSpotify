@@ -1,0 +1,217 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" MinHeight="600" MinWidth="400" Height="600" Width="400"
+		Icon="C:\Users\Админ\Desktop\shop\Shop\Images\iconMain.png"
+		
+        x:Class="Shop.MainWindow"
+        Title="Spotify">
+	<Window.Styles>
+		<Styles>
+			<Style Selector="Button:pointerover /template/ ContentPresenter">
+				<Setter Property="Background" Value="#a4a6a4"/>
+			</Style>
+			<Style Selector="CheckBox:unchecked /template/ Border#NormalRectangle">
+				<Setter Property="BorderBrush" Value="White"/>
+
+			</Style>
+		</Styles>
+	</Window.Styles>
+
+	<Grid RowDefinitions=", *, " Background="#0e0e0e">
+		<Grid.Styles>
+			<Style Selector="CheckBox:pointerover /template/ Border#NormalRectangle">
+				<Setter Property="BorderBrush" Value="Gray" />
+			</Style>
+		</Grid.Styles>
+
+		<TextBlock
+		   HorizontalAlignment="Center"
+		   VerticalAlignment="Center"
+		   Margin="-165"
+		   TextAlignment="Center"
+		   Text="Music for everyone"
+		   Grid.Row="0"
+		   FontSize="25"
+		   Foreground="#ffff"
+		   FontWeight="Bold"
+      
+    />
+
+		<TextBlock
+		   HorizontalAlignment="Center"
+		   VerticalAlignment="Center"
+		   Margin="0, 150, 0, 0"
+		   TextAlignment="Center"
+		   Text="OR"
+		   Grid.Row="0"
+		   FontSize="14"
+		   Foreground="#a3a3a3"
+		   FontWeight="Bold"
+      
+    />
+
+		<TextBlock
+		   Margin="62, -20"
+		   HorizontalAlignment="Left"
+		   VerticalAlignment="Center"
+		   TextAlignment="Left"
+		   Text="Remember me"
+		   FontSize="12"
+		   Foreground="#959695"
+		   FontWeight=""
+      
+    />
+		
+		<TextBlock
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			TextAlignment="Left"
+			Text="DON'T HAVE AN ACCOUNT?"
+			Foreground="#b8b6b6"
+			FontSize="12"
+			FontWeight="DemiBold"
+			Margin="80, 125"
+			
+			
+			/>
+		
+		<TextBlock
+			HorizontalAlignment="Right"
+			VerticalAlignment="Bottom"
+			TextAlignment="Right"
+			Text="S I G N U P"
+			Foreground="White"
+			FontSize="12"
+			FontWeight="Bold"
+			TextDecorations="Underline"
+			Margin="80, 125"
+			/>
+
+
+		<TextBox
+		   Margin="0, 0, 0, 200"
+		   HorizontalAlignment="Center"
+		   VerticalAlignment="Center"
+		   PasswordChar="•"
+		   Padding="5"
+		   Grid.Row="0"
+		   Name="LoginTextBox"
+		   Watermark="Email or username"
+		   FontSize="14"
+		   Background="#333333"
+		   Foreground="#8f8f8f"
+		   CornerRadius="3"
+		   FontWeight="Medium"
+		   Width="280"
+		   Height="35"
+    
+      
+      
+    />
+
+		<TextBox
+		   HorizontalAlignment="Center"
+		   VerticalAlignment="Center"
+		   Margin="0, 0, 0, 110"
+		   PasswordChar="•"
+		   Padding="5"
+		   Grid.Row="0"
+		   Name="PasswordTextBox"
+		   Watermark="Password"
+		   FontSize="14"
+		   Background="#333333"
+		   Foreground="#8f8f8f"
+		   CornerRadius="3"
+		   FontWeight="Medium"
+		   Width="280"
+		   Height="35"
+      
+      />
+		<CheckBox
+		   HorizontalAlignment="Right"
+		   VerticalAlignment="Center"
+		   Margin="0, 0, 61, 25"
+		   BorderBrush="White"
+		   BorderThickness="0"
+		   CornerRadius="3"
+		   Padding="0"
+		   Height="0"
+   />
+
+
+		<Image Margin="0, 0, 0, 450" Height="140"
+		   HorizontalAlignment="Center"
+		   VerticalAlignment="Center"
+		   Source="C:\Users\Админ\Desktop\shop\Shop\Images\logo.png"/>
+
+		<Image Margin="10, 0, 68 , 200" Height="14"
+		   HorizontalAlignment="Right"
+		   VerticalAlignment="Center"
+		   Source="C:\Users\Админ\Desktop\shop\Shop\Images\email.png"/>
+
+		<Image Margin="10, 0, 68, 110" Height="12"
+		   HorizontalAlignment="Right"
+		   VerticalAlignment="Center"
+
+		   Source="C:\Users\Админ\Desktop\shop\Shop\Images\password2.png"/>
+
+		<Button
+		 HorizontalAlignment="Center"
+		 VerticalAlignment="Center"
+		 HorizontalContentAlignment="Center"
+		 VerticalContentAlignment="Center"
+		 Margin="0, 0, 0, -65"
+		 Background="#ffff"
+		 Height="40"
+		 Width="272"
+		 BorderThickness=""
+		 CornerRadius="80"
+		 FontWeight="Black"
+		 FontSize="13"
+		 Foreground="#272727"
+  
+  >L O G I N</Button>
+
+		<Button
+		 HorizontalAlignment="Center"
+		 VerticalAlignment="Bottom"
+		 HorizontalContentAlignment="Center"
+		 VerticalContentAlignment="Center"
+		 Margin="0, 0, 0, 160"
+		 Background="#3b5996"
+		 Height="40"
+		 Width="272"
+		 BorderThickness=""
+		 CornerRadius="80"
+		 FontWeight="DemiBold"
+		 FontSize="12"
+		 Foreground="White"
+		 
+		 >LOGIN WITH FACEBOOK
+				
+			 
+		</Button>
+
+
+		<Line
+		 HorizontalAlignment="Left"
+		 VerticalAlignment="Bottom"
+		 StartPoint="132, 30" EndPoint="20, 30" Stroke="#a3a3a3"
+		 StrokeThickness="1"
+		 Margin="42, 225"
+  />
+		<Line
+			HorizontalAlignment="Right"
+			VerticalAlignment="Bottom"
+			StartPoint="120, 15" EndPoint="10, 15" Stroke="#a3a3a3"
+			StrokeThickness="1"
+			Margin="60, 225"
+			/>
+
+
+
+	</Grid>
+
+</Window>
